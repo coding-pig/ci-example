@@ -1,6 +1,4 @@
 version: 2.1
 
-workflows:
-    jobs:
-        steps:
-            - echo "Hello!"
+steps:
+    - run: echo "Hello!"
