@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/coding-pig/ci-example.svg?branch=master)](https://travis-ci.org/coding-pig/ci-example) [![codecov](https://codecov.io/gh/coding-pig/ci-example/branch/master/graph/badge.svg)](https://codecov.io/gh/coding-pig/ci-example)

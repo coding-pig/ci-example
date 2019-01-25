@@ -1,7 +1,8 @@
-from foo import Foo
+from src import foo
+
 
 class TestFoo:
 
     def test_name(self):
-        foo = Foo('a')
-        assert foo.name == 'a'
+        f = foo.Foo('a')
+        assert f.name == 'a'
