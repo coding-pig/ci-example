@@ -5,10 +5,10 @@ jobs:
             - image: circleci/python:3.5.6
         steps:
             - checkout
-            - run: pip install -U pytest
-            - run: pip install -U pytest-cov
-            - run: pip install -U codecov
-            - run: pip install -U pycodestyle
-            - run: pycodestyle ./src ./tests
+            - run: sudo pip install -U pytest
+            - run: sudo pip install -U pytest-cov
+            - run: sudo pip install -U codecov
+            - run: sudo pip install -U pycodestyle
+            - run: sudo pycodestyle ./src ./tests
             - run: PYTHONPATH=./ py.test --cov=./src tests
             - run: codecov
