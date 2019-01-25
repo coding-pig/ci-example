@@ -10,5 +10,5 @@ jobs:
             - run: pip install -U codecov
             - run: pip install -U pycodestyle
             - run: pycodestyle ./src ./tests
-            - PYTHONPATH=./ py.test --cov=./src tests
-            - codecov
+            - run: PYTHONPATH=./ py.test --cov=./src tests
+            - run: codecov
