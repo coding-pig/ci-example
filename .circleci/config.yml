@@ -12,3 +12,6 @@ jobs:
             - run: sudo pycodestyle ./src ./tests
             - run: PYTHONPATH=./ py.test --cov=./src tests
             - run: codecov
+            - store_artifacts:
+                path: ./.coverage
+                destination: .coverage
